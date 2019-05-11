@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EscapeRoom_v1._0"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Escape Game" Height="568.8" Width="800">
+
     <Grid>
-        
+        <TextBlock x:Name="txtRoomDesc" HorizontalAlignment="Left" Margin="36,33,0,0" Background="BlanchedAlmond" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="671"/>
+        <Label x:Name="lblMessage" Content="" HorizontalAlignment="Left" Margin="36,96,0,0" VerticalAlignment="Top" Width="671" Background="BurlyWood"/>
+        <Label x:Name="lblRoomItems" Content="Room Items" HorizontalAlignment="Left" Margin="36,197,0,0" VerticalAlignment="Top" Width="110"/>
+        <ListBox x:Name="lstRoomItems" HorizontalAlignment="Left" Height="127" Margin="36,228,0,0" VerticalAlignment="Top" Width="224" SelectionChanged="LstRoomItems_SelectionChanged"/>
+        <Button x:Name="btnCheck" Content="&lt;- Check" HorizontalAlignment="Left" Margin="303,252,0,0" VerticalAlignment="Top" Width="142" Height="31" Click="BtnCheck_Click"/>
+        <Button x:Name="btnUseOne" Content="&lt;- Use One -&gt;" HorizontalAlignment="Left" Margin="303,300,0,0" VerticalAlignment="Top" Width="142" Height="31" Click="BtnUseOne_Click"/>
+        <Button x:Name="btnPickUp" Content="Pick Up &gt;&gt;" HorizontalAlignment="Left" Margin="303,348,0,0" VerticalAlignment="Top" Width="142" Height="31" Click="BtnPickUp_Click"/>
+        <Label x:Name="lblMyItems" Content="Picked Up Items" HorizontalAlignment="Left" Margin="481,197,0,0" VerticalAlignment="Top" Width="117"/>
+        <ListBox x:Name="lstMyItems" HorizontalAlignment="Left" Height="127" Margin="481,228,0,0" VerticalAlignment="Top" Width="243" SelectionChanged="LstMyItems_SelectionChanged"/>
+
     </Grid>
 </Window>
